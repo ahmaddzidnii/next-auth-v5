@@ -1,8 +1,11 @@
+import { CardWrapper } from "@/components/auth/card-wrapper";
+import { LoginForm } from "@/components/auth/login-form";
+
 const LoginPage = () => {
   return (
-    <div>
-      <h1>Login</h1>
-    </div>
+    <CardWrapper headerLabel="Welcome Back" backButtonLabel="Don't have an account?" backButtonHref="/auth/register" showSocial>
+      <LoginForm />
+    </CardWrapper>
   );
 };
 
